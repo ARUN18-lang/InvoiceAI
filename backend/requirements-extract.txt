@@ -1,0 +1,4 @@
+# Heavy document pipelines — install after core: pip install -r requirements-extract.txt
+-r requirements.txt
+docling>=2.15.0
+unstructured[pdf]>=0.16.0

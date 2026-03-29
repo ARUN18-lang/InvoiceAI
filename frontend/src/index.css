@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-canvas;
+    color-scheme: dark;
+  }
+
+  /* Native selects / inputs respect dark scheme; avoids invisible text on some browsers */
+  body {
+    @apply text-neutral-100 antialiased;
+  }
+}
+
+/* Subtle scrollbar for dark UI */
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+  scrollbar-width: thin;
+}
